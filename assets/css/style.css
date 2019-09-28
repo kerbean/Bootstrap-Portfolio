@@ -76,7 +76,7 @@ table {
  .container{
     background: #ffffff;
     padding: 30px;
-    width: 960px;
+    max-width: 960px;
     height: 500px;
     /* margin-top: 20px; */
     /* margin: 0px 0px 50px; */
@@ -111,7 +111,7 @@ table {
 
 .contentsheader{
     color: #4aaaa5;
-    padding: 10px;
+    padding: 0px;
 }
 
 #txtABout{
