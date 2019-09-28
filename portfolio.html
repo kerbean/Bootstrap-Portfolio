@@ -2,97 +2,105 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
     <meta charset="UTF-8">
     <title>Kervin's Portfolio</title>
 </head>
 
 <body>
+
     <div class="topheader">
-        <div class="headercontainer">
-            <h1 id="uname">Kervin Del Rosario</h1>
-            <section class="hdrRight">
-                <div class="hdrContents">About</div>
-                <div class="hdrContents">Portfolio</div>
-                <div class="hdrContents">Contact</div>
-            </section>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a id="uname" class="navbar-brand" href="index.html">Kervin Del Rosario</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <div class="divcontents">
-        <div class="contentsheader">
-            <h2>Portfolio</h2>
-        </div>
-        <hr>
-        <!-- <section class="secport">
-            <div class="row-1">
-                <div class="img-1">
-                    <img class="imgport" src="https://via.placeholder.com/150x100">
-                    <div class="lbl-1">
-                        <p style="color:red">Hangman</p>
-                    </div>
-                </div>
-                <div class="img-2">
+    <div id=main-container class=container>
+        <section class="secContainer">
+            <h1>Portfolio</h1>
 
-                </div>
-                <div class="lbl-1">
-
-                </div>
+            <div class="work">
+                <img src="assets/images/hangman.jpg" class="auth-image">
+                <h3>
+                    Hangman
+                </h3>
             </div>
-            <div class="row-2">
-                <div class="img-1">
-
-                </div>
-                <div class="lbl-1">
-
-                </div>
+            <div class="work">
+                <img src="assets/images/rpggame.jpg" class="auth-image">
+                <h3>
+                    RPG Game
+                </h3>
             </div>
-            <div class="row-3">
-                <div class="img-1">
-
-                </div>
-                <div class="lbl-1">
-
-                </div>
+            <div class="work">
+                <img src="assets/images/triviagame.jpg" class="auth-image">
+                <h3>
+                    Triva Game
+                </h3>
             </div>
-        </section> -->
-        <table class="tblport">
-            <tr>
-                <td>
-                    <div class="tdport">
-                        <img class="imgport" src="https://via.placeholder.com/150x100">
-                        <div class="lblport">Hangman</div>
-                    </div>
-                </td>
-                <td>
-                    <img class="imgport" src="https://via.placeholder.com/150x100">
-                    <div class="lblport">RPG Game</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="tdport">
-                        <img class="imgport" src="https://via.placeholder.com/150x100">
-                        <div class="lblport">Trivia Game</div>
-                    </div>
-                </td>
-                <td>
-                    <img class="imgport" src="https://via.placeholder.com/150x100">
-                    <div class="lblport">Rutgers Info Widget</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="tdport">
-                        <img class="imgport" src="https://via.placeholder.com/150x100">
-                        <div class="lblport">Rock Paper Scissors</div>
-                    </div>
-                </td>
-            </tr>
-        </table>
+            <div class="work">
+                <img src="assets/images/rutgers.jpg" class="auth-image">
+                <h3>
+                    Rutger Info Widget
+                </h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/rock.jpg" class="auth-image">
+                <h3>
+                    Rock Paper Scissors
+                </h3>
+            </div>
+        </section>
+        <section class="sidebar">
+            <div id="connect">
+                <h2>Connect with Me</h2>
+
+                <img src="assets/images/random" class="social">
+                <img src="assets/images/random" class="social">
+                <img src="assets/images/random" class="social">
+
+            </div>
+        </section>
     </div>
-    <footer>
-        Copyright All Rights Reserved
+
+    <footer class="footer mt-auto py-3">
+        <!-- <div class="container"> -->
+        <span class="text-muted">Copyright All Right Reserved.</span>
+        <!-- </div> -->
     </footer>
+
+
+
+
 </body>
 
 </html>
